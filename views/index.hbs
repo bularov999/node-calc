@@ -1,0 +1,226 @@
+<div class="container">
+
+    <form action="/api/post" id="form" name="form" method="POST">
+        <div class="form-block">
+            <div class="title-block">
+                <h1 class="title">Заслонка</h1>
+            </div>
+            <div class="block">
+                <div class="inputs">
+                    <div class="labels">
+                        <h2>Управление</h2>
+                    </div>
+                    <div class="main">
+                        <div class="forms">
+                            <input id="control-1" type="radio" name="control" value="diskret">
+                            <label for="control-1">Дискретное</label>
+                        </div>
+                        <div class="forms">
+                            <input id="control-2" type="radio" name="control" value="analog">
+                            <label for="control-2">Аналоговое</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inputs">
+                    <div class="labels">
+                        <h2>Контроль открытия</h2>
+                    </div>
+
+                    <div class="main">
+                        <div class="forms">
+                            <input id="control-open-1" type="radio" name="control-open" value="false">
+                            <label for="control-open-1">Нет</label>
+                        </div>
+                        <div class="forms">
+                            <input id="control-open-2" type="radio" name="control-open" value="true">
+                            <label for="control-open-2">Есть</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-block">
+            <div class="title-block">
+                <h1 class="title">Фильтра</h1>
+            </div>
+
+            <div class="block">
+                <div class="inputs">
+                    <div class="labels">
+                        <h2>Количество</h2>
+                    </div>
+
+                    <div class="main">
+                        <div class="forms">
+                            <input id="count-filtr" type="text" name="count-filtr" value="3">
+                            <label for="count-filtr">шт</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inputs">
+                    <div class="labels">
+                        <h2>Сигналы</h2>
+                    </div>
+
+                    <div class="main">
+                        <div class="forms">
+                            <input id="signal-1" type="radio" name="signal" value="divided">
+                            <label for="signal-1">Разделены</label>
+                        </div>
+                        <div class="forms">
+                            <input id="signal-2" type="radio" name="signal" value="united">
+                            <label for="signal-2">Объединены</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-block">
+            <div class="title-block">
+                <h1 class="title">Нагреватель</h1>
+            </div>
+
+            <div class="block">
+                <div class="inputs">
+                    <div class="labels">
+                        <h2>Тип</h2>
+                    </div>
+
+                    <div class="main">
+                        <div class="forms">
+                            <input id="heater-type-1" type="radio" name="heater" value="water">
+                            <label for="heater-type-1">Водяной</label>
+                        </div>
+                        <div class="forms">
+                            <input id="heater-type-2" type="radio" name="heater" value="electric">
+                            <label for="heater-type-2">Электрический</label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="form-block">
+            <div class="title-block">
+                <h1 class="title">Охладитель</h1>
+            </div>
+
+            <div class="block">
+                <div class="inputs">
+                    <div class="labels">
+                        <h2>Тип</h2>
+                    </div>
+                    <div class="main">
+                        <div class="forms">
+                            <input id="refrigerant-type-1" type="radio" name="refrigerant" value="no">
+                            <label for="refrigerant-type-1">Нет</label>
+                        </div>
+                        <div class="forms">
+                            <input id="refrigerant-type-2" type="radio" name="refrigerant" value="water">
+                            <label for="refrigerant-type-2">Водяной</label>
+                        </div>
+                        <div class="forms">
+                            <input id="refrigerant-type-3" type="radio" name="refrigerant" value="freon">
+                            <label for="refrigerant-type-3">Фреоновый</label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="form-block">
+            <div class="title-block">
+                <h1 class="title">Вентилятор</h1>
+            </div>
+
+            <div class="block">
+
+                <div class="inputs">
+                    <div class="labels">
+                        <h2>Мощность</h2>
+                    </div>
+
+                    <div class="main">
+                        <div class="forms">
+                            <input id="fan-count" type="text" name="fan-count" value="2,2">
+                            <label for="fan-count">кВт</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inputs">
+                    <div class="labels">
+                        <h2>Управление</h2>
+                    </div>
+
+                    <div class="main">
+                        <div class="forms">
+                            <input id="fan-control-1" type="radio" name="fan" value="direct-start">
+                            <label for="fan-control-1">Прямой пуск</label>
+                        </div>
+                        <div class="forms">
+                            <input id="fan-control-2" type="radio" name="fan" value="transformer">
+                            <label for="fan-control-2">Преоброзователь частоты</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-block">
+            <div class="title-block">
+                <h1 class="title">Общие</h1>
+            </div>
+
+            <div class="block">
+                <div class="inputs">
+                    <div class="labels">
+                        <h2>Корпус</h2>
+                    </div>
+                    <div class="main">
+                        <div class="forms">
+                            <input id="case-1" type="radio" name="heater" value="water">
+                            <label for="case-1">Пластик</label>
+                        </div>
+                        <div class="forms">
+                            <input id="case-2" type="radio" name="heater" value="electric">
+                            <label for="case-2">Металл</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <div class="labels">
+                        <h2>Доп.опции</h2>
+                    </div>
+                    <div class="main">
+                        <div class="forms">
+                            <input id="option-1" type="checkbox" name="option" value="signal-fire">
+                            <label for="option-1">Сигнал пожар</label>
+                        </div>
+                        <div class="forms">
+                            <input id="option-2" type="checkbox" name="option" value="LED-indication">
+                            <label for="option-2">LED-индикация</label>
+                        </div>
+                        <div class="forms">
+                            <input id="option-3" type="checkbox" name="option" value="dispatching">
+                            <label for="option-3">Диспетчеризация</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="forms-block">
+            <button class="btn">
+                Отправить
+            </button>
+        </div>
+    </form>
+</div>
+
